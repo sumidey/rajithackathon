@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-derk*u_vt!)_f!0_1s+2yez^%=c&(y66&ajw=c^p!vp)ichw26
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [".vercel.app",".new.sh"]
 
 
 # Application definition
@@ -138,3 +138,8 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+import os
+STATIC_URL="static/"
+STATICFILES_DIRS =os.path.join(BASE_DIR,"static"),
+STATIC_ROOT = os.path.join(BASE_DIR,"staicfiles_build","static")

@@ -1,0 +1,113 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ovulation Calculator</title>
+	<link rel="stylesheet" href="{%static 'ovulation.css'%}">
+</head>
+<body>
+
+	<!-- nav -->
+	<header class="header">
+		<div class="container">
+			<div class="header-main">
+				<div class="logo">
+					<a href="/"><img src="{%static 'logo.png'%}" width="75vh"></a>
+				</div>
+				<div class="open-nav-menu">
+					<span></span>
+				</div>
+				<div class="menu-overlay">
+				</div>
+				<!-- navigation menu start -->
+				<div class="nav-menu">
+					<div class="close-nav-menu">
+						<img src="{%static 'close.svg'%}" alt="close">
+					</div>
+					<ul class="menu">
+						<li class="menu-item menu-item-has-children">
+							<a href="MenstrualAwareness" data-toggle="sub-menu">Menstrual Awarness</a>
+							<ul class="sub-menu">
+								<li class="menu-item"><a href="homeRemedies">Home Remedies</a></li>
+								<li class="menu-item"><a href="">Anganbadi And Ngo</a></li>
+								<li class="menu-item"><a href="skinChange">Skin And Hair</a></li>
+								<li class="menu-item"><a href="#">Diet and Exercise</a></li>
+								<li class="menu-item"><a href="#">Bleeding</a></li>
+								<li class="menu-item"><a href="#">Emotions</a></li>
+								<li class="menu-item"><a href="doDont">Do's and Dont's</a></li>
+								<li class="menu-item"><a href="quiz">Quizes</a></li>
+								<li class="menu-item"><a href="menopause">Menopause</a></li>
+							</ul>
+						</li>
+						<li class="menu-item menu-item-has-children">
+							<a href="#" data-toggle="sub-menu">Product </a>
+							<ul class="sub-menu">
+								<li class="menu-item"><a href="#">Menstruation</a></li>
+								<li class="menu-item"><a href="#">Pregnancy Kits</a></li>
+	
+							</ul>
+						</li>
+						<li class="menu-item menu-item-has-children">
+							<a href="#" data-toggle="sub-menu">Track </a>
+							<ul class="sub-menu">
+								<li class="menu-item"><a href="pcosHome">PCOS Prediction</a></li>
+								<li class="menu-item"><a href="ovulation">Ovulation Tracker</a></li>
+								<li class="menu-item"><a href="nextPeriod">Period Calculator</a></li>
+								<li class="menu-item"><a href="pregnancyTracker">Pregnancy test calculator</a></li>
+	
+							</ul>
+						</li>
+						<li class="menu-item menu-item-has-children">
+							<a href="#" data-toggle="sub-menu">Health Condition </a>
+							<ul class="sub-menu">
+								<li class="menu-item"><a href="#">Cancer</a></li>
+								<li class="menu-item"><a href="#">PCO's</a></li>
+								<li class="menu-item"><a href="#">Others</a></li>
+								<li class="menu-item"><a href="#">Consult / Find a Doctor</a></li>
+	
+							</ul>
+						</li>
+	
+						<li class="login">
+							<a href="login" class="login_a">Login</a>
+							<!-- <button class="login_a">Login</button> -->
+						</li>
+	
+						<li class="menu-item">
+							<a id="menu-item-discuss" href="discussionForum" style="border-radius: 0.4rem;">Discuss</a>
+						</li>
+					</ul>
+				</div>
+				<!-- navigation menu end -->
+			</div>
+		</div>
+	</header>
+	<!-- header end -->
+
+	<form id="ovtracker">
+        <h2>Ovulation Tracker</h2>
+		<label for="last-period-date">Last Period Date:</label>
+		<input type="date" id="last-period-date" required>
+        <br>
+		<label for="cycle-length">Average Cycle Length(in days):</label>
+		<input type="number" id="cycle-length" min="21" max="35" required>
+        <br>
+		<input type="submit" value="Calculate">
+	</form>
+	<div id="result">
+        <div class="resfl"id="ovresfl" >
+            <h2 >Ovulation Date:</h2>
+            <p id="ovulation-date"></p>
+        </div >
+	    <div class="resfl">
+            <h2>Fertility Period:</h2>
+            <p id="fertility-period"></p>
+        </div>
+		<div class="calendar" id="calendar"></div>
+	</div>
+	
+
+	<script src="{%static 'ovulation.js'%}"></script>
+</body>
+</html>
+

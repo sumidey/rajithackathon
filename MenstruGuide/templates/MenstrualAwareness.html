@@ -1,0 +1,223 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{%static 'MenstrualAwareness.css'%}">
+</head>
+<body>
+  
+  <!-- nav -->
+  <header class="header">
+    <div class="container">
+        <div class="header-main">
+            <div class="logo">
+                <a href="/"><img src="{%static 'logo.png'%}" width="75vh"></a>
+            </div>
+            <div class="open-nav-menu">
+                <span></span>
+            </div>
+            <div class="menu-overlay">
+            </div>
+            <!-- navigation menu start -->
+            <div class="nav-menu">
+                <div class="close-nav-menu">
+                    <img src="{%static 'close.svg'%}" alt="close">
+                </div>
+                <ul class="menu">
+                    <li class="menu-item menu-item-has-children">
+                        <a href="MenstrualAwareness" data-toggle="sub-menu">Menstrual Awarness</a>
+                        <ul class="sub-menu">
+                            <li class="menu-item"><a href="homeRemedies">Home Remedies</a></li>
+                            <li class="menu-item"><a href="">Anganbadi And Ngo</a></li>
+                            <li class="menu-item"><a href="skinChange">Skin And Hair</a></li>
+                            <li class="menu-item"><a href="#">Diet and Exercise</a></li>
+                            <li class="menu-item"><a href="#">Bleeding</a></li>
+                            <li class="menu-item"><a href="#">Emotions</a></li>
+                            <li class="menu-item"><a href="doDont">Do's and Dont's</a></li>
+                            <li class="menu-item"><a href="quiz">Quizes</a></li>
+                            <li class="menu-item"><a href="menopause">Menopause</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item menu-item-has-children">
+                        <a href="#" data-toggle="sub-menu">Product </a>
+                        <ul class="sub-menu">
+                            <li class="menu-item"><a href="#">Menstruation</a></li>
+                            <li class="menu-item"><a href="#">Pregnancy Kits</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="menu-item menu-item-has-children">
+                        <a href="#" data-toggle="sub-menu">Track </a>
+                        <ul class="sub-menu">
+                            <li class="menu-item"><a href="pcosHome">PCOS Prediction</a></li>
+                            <li class="menu-item"><a href="ovulation">Ovulation Tracker</a></li>
+                            <li class="menu-item"><a href="nextPeriod">Period Calculator</a></li>
+                            <li class="menu-item"><a href="pregnancyTracker">Pregnancy test calculator</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="menu-item menu-item-has-children">
+                        <a href="#" data-toggle="sub-menu">Health Condition </a>
+                        <ul class="sub-menu">
+                            <li class="menu-item"><a href="#">Cancer</a></li>
+                            <li class="menu-item"><a href="#">PCO's</a></li>
+                            <li class="menu-item"><a href="#">Others</a></li>
+                            <li class="menu-item"><a href="#">Consult / Find a Doctor</a></li>
+
+                        </ul>
+                    </li>
+
+                    <li class="login">
+                        <a href="login" class="login_a">Login</a>
+                        <!-- <button class="login_a">Login</button> -->
+                    </li>
+
+                    <li class="menu-item">
+                        <a id="menu-item-discuss" href="discussionForum" style="border-radius: 0.4rem;">Discuss</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- navigation menu end -->
+        </div>
+    </div>
+</header>
+ <!-- header end -->
+ <section class="mawarenessbody">
+    <div class="container">
+        <div class="card">
+          <div class="box">
+            <div class="imgBx">
+              <img src="{%static 'agan&ngo.gif'%}" alt="">
+          </div>
+            <div class="content">
+              <!-- <h2>Menstrual Pain</h2> -->
+              <h2>Anganbadi & NGO</h2>
+              <p class="con">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?</p>
+              <a href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="card">
+          <div class="box">
+            <div class="imgBx">
+              <img src="{%static 'bleed.gif'%}" alt="">
+          </div>
+            <div class="content">
+              <!-- <h2>Heavy Flow</h2> -->
+              <h2>Bleeding</h2>
+              <p class="con">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?</p>
+              <a href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="card">
+          <div class="box">
+            <div class="imgBx">
+              <img src="{%static 'dietex.gif'%}" alt="">
+          </div>
+            <div class="content">
+              <!-- <h2>Irregular Periods</h2> -->
+              <h2>Diet & Exercise</h2>
+              <p class="con">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?</p>
+              <a href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="box">
+            <div class="imgBx">
+              <img src="{%static 'DD.gif'%}" alt="">
+          </div>
+            <div class="content">
+              <!-- <h2>Absence of Periods</h2> -->
+              <h2>Do's & Dont's</h2>
+              <p class="con">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?</p>
+              <a href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="card">
+          <div class="box">
+            <div class="imgBx">
+              <img src="{%static 'emo.gif'%}" alt="">
+          </div>
+            <div class="content">
+              <!-- <h2>Light Periods</h2> -->
+              <h2>Emotions</h2>
+              <p class="con">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?</p>
+              <a href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="box">
+            <div class="imgBx">
+              <img src="{%static 'home.gif'%}" alt="">
+          </div>
+            <div class="content">
+              <!-- <h2>PMS</h2> -->
+              <h2>Home Remedies</h2>
+              <p class="con">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?</p>
+              <a href="homeRemedies">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="box">
+            <div class="imgBx">
+              <img src="{%static 'meno.gif'%}" alt="">
+          </div>
+            <div class="content">
+              <h2>Menopause</h2>
+            
+              <p class="con">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?</p>
+              <a href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="box">
+            <div class="imgBx">
+              <img src="{%static 'quiz.gif'%}" alt="">
+          </div>
+            <div class="content">
+              <h2>Quizes</h2>
+            
+              <p class="con">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?</p>
+              <a href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="box">
+            <div class="imgBx">
+              <img src="{%static 'skin&hair.gif'%}" alt="">
+          </div>
+            <div class="content">
+              <!-- <h2>Irregular Periods</h2> -->
+              <h2>Skin & Hair</h2>
+              <p class="con">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?</p>
+              <a href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+</body>
+</html>

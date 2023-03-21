@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menstruguide</title>
+  <link rel="stylesheet" href="{%static 'home.css'%}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <!-- header starts -->
+  <header class="header">
+    <div class="container">
+        <div class="header-main">
+            <div class="logo">
+                <a href="/"><img src="{%static 'logo.png'%}" width="75vh"></a>
+            </div>
+            <div class="open-nav-menu">
+                <span></span>
+            </div>
+            <div class="menu-overlay">
+            </div>
+            <!-- navigation menu start -->
+            <div class="nav-menu">
+                <div class="close-nav-menu">
+                    <img src="{%static 'close.svg'%}" alt="close">
+                </div>
+                <ul class="menu">
+                    <li class="menu-item menu-item-has-children">
+                        <a href="MenstrualAwareness" data-toggle="sub-menu">Menstrual Awarness</a>
+                        <ul class="sub-menu">
+                            <li class="menu-item"><a href="homeRemedies">Home Remedies</a></li>
+                            <li class="menu-item"><a href="">Anganbadi And Ngo</a></li>
+                            <li class="menu-item"><a href="skinChange">Skin And Hair</a></li>
+                            <li class="menu-item"><a href="#">Diet and Exercise</a></li>
+                            <li class="menu-item"><a href="#">Bleeding</a></li>
+                            <li class="menu-item"><a href="#">Emotions</a></li>
+                            <li class="menu-item"><a href="doDont">Do's and Dont's</a></li>
+                            <li class="menu-item"><a href="quiz">Quizes</a></li>
+                            <li class="menu-item"><a href="menopause">Menopause</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item menu-item-has-children">
+                        <a href="#" data-toggle="sub-menu">Product </a>
+                        <ul class="sub-menu">
+                            <li class="menu-item"><a href="#">Menstruation</a></li>
+                            <li class="menu-item"><a href="#">Pregnancy Kits</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="menu-item menu-item-has-children">
+                        <a href="#" data-toggle="sub-menu">Track </a>
+                        <ul class="sub-menu">
+                            <li class="menu-item"><a href="pcosHome">PCOS Prediction</a></li>
+                            <li class="menu-item"><a href="ovulation">Ovulation Tracker</a></li>
+                            <li class="menu-item"><a href="nextPeriod">Period Calculator</a></li>
+                            <li class="menu-item"><a href="pregnancyTracker">Pregnancy test calculator</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="menu-item menu-item-has-children">
+                        <a href="#" data-toggle="sub-menu">Health Condition </a>
+                        <ul class="sub-menu">
+                            <li class="menu-item"><a href="#">Cancer</a></li>
+                            <li class="menu-item"><a href="#">PCO's</a></li>
+                            <li class="menu-item"><a href="#">Others</a></li>
+                            <li class="menu-item"><a href="#">Consult / Find a Doctor</a></li>
+
+                        </ul>
+                    </li>
+
+                    <li class="login">
+                        <a href="login" class="login_a">Login</a>
+                        <!-- <button class="login_a">Login</button> -->
+                    </li>
+
+                    <li class="menu-item">
+                        <a id="menu-item-discuss" href="discussionForum" style="border-radius: 0.4rem;">Discuss</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- navigation menu end -->
+        </div>
+    </div>
+</header>
+  <!-- header end -->
+
+
+  <!---home section starts-->
+
+  <section class="home" id="home">
+
+    <div class="content">
+      <h3>Let's normalize voicing out about the menstrual health</h3>
+      <p>Let us come together to know more about menstural health.</p>
+      <a href="/aboutUs" class="btn"> Guide Yourself <span class="fa-solid fa-chevron-right"></i> </span> </a>
+    </div>
+
+    <div class="image">
+      <img src="{%static 'homi.jpeg'%}" alt="">
+    </div>
+
+  </section>
+
+  <!---home section ends-->
+
+  <!-- our services starts -->
+  <section id="services" class="services">
+    <h1 class="heading">Our Services</h1>
+    <p class="underline"></p>
+
+    <div class="box">
+
+      <div class="card">
+        <div class="imgBx">
+          <img src="{%static 'specialist.png'%}" alt="blood availability search">
+        </div>
+        <div class="details">
+          <h2>Experienced Specialists</h2>
+          <!-- <p>We provide you the best specialist within your city</p> -->
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="imgBx">
+          <img src="{%static 'predict.webp'%}" alt="blood availability search">
+        </div>
+        <div class="details">
+          <h2>Accurate Prediction</h2>
+          <!-- <p>Tracking your periods, ovulation, pregnancy, PCOS with Menstruguide will help you calculate and predict -->
+          <!-- symptoms ahead of time, getting you prepared for the days ahead.</p> -->
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="imgBx">
+          <img src="{%static 'fastdelivery.gif'%}" alt="blood availability search">
+        </div>
+        <div class="details">
+          <h2>Fast Delivery</h2>
+          <!-- <p>We'll provide you fast and efficient delivery to intended destination within a short period of time</p> -->
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="imgBx">
+          <img src="{%static 'privacy.webp'%}" alt="blood availability search" style="padding-top: 25px">
+        </div>
+        <div class="details">
+          <h2>Maintain Your Privacy</h2>
+          <!-- <p>You trust us with your personal information, so it's our responsibility to never share your health data with others.</p> -->
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- our services ends -->
+
+  <!-- main features starts-->
+  <section id="features" class="features">
+    <h2>Our Features</h2>
+    <p class="underline"></p>
+
+    <!-- 1 -->
+    <div class="homepage1">
+      <div class="content">
+        <h2 class="heading">PCOS Prediction</h2>
+        <p class="matter">If you want to know more about your body and how your cycle can affect everything from
+          your mood to your energy levels, tracking your periods and ovulation is a great place to start.</p>
+        <a href="pcosHome" title="Get Home Remedies">Predict PCOS <i class="fa-solid fa-arrow-right"></i> </a>
+      </div>
+      <div class="image">
+        <img src="{%static 'pcospred.png'%}" alt="" class="homeimg">
+      </div>
+    </div>
+
+    <!-- 2 -->
+    <div class="homepage2">
+      <div class="image">
+        <img src="{%static 'trackcycle.png'%}" alt="" class="homeimg" style="height: 650px; padding-right: 3rem;">
+      </div>
+      <div class="content">
+        <h2 class="heading">Period Tracker</h2>
+        <p class="matter">If you want to know more about your body and how your cycle can affect everything from
+          your mood to your energy levels, tracking your periods and ovulation is a great place to start.</p>
+        <div class="anchor">
+          <a href="nextPeriod" title="Get Home Remedies"> <i class="fa-solid fa-arrow-left"></i> Track your cycle
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3 -->
+    <div class="homepage1">
+      <div class="content">
+        <h2 class="heading">Home Remedies</h2>
+        <p class="matter">If you want to know more about your body and how your cycle can affect everything from
+          your mood to your energy levels, tracking your periods and ovulation is a great place to start.</p>
+        <a href="homeRemedies" title="Get Home Remedies">Get Home Remedies <i class="fa-solid fa-arrow-right"></i> </a>
+      </div>
+      <div class="image">
+        <img src="{%static 'home remidy.png'%}" alt="" class="homeimg">
+      </div>
+    </div>
+
+    <!-- 4 -->
+    <div class="homepage2">
+      <div class="image">
+        <img src="{%static 'discussionforum.png'%}" alt="" class="homeimg">
+      </div>
+      <div class="content">
+        <h2 class="heading">Discussion Forum</h2>
+        <p class="matter">If you want to know more about your body and how your cycle can affect everything from
+          your mood to your energy levels, tracking your periods and ovulation is a great place to start.</p>
+        <div class="anchor">
+          <a href="discussionForum" title="Go to discuss section"> <i class="fa-solid fa-arrow-left"></i> Discussion Section
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5 -->
+    <div class="homepage1">
+      <div class="content">
+        <h2 class="heading">Ovultion Tracker</h2>
+        <p class="matter">If you want to know more about your body and how your cycle can affect everything from
+          your mood to your energy levels, tracking your periods and ovulation is a great place to start.</p>
+        <a href="ovulation" title="Get Home Remedies">Get your ovulation track <i class="fa-solid fa-arrow-right"></i> </a>
+      </div>
+      <div class="image">
+        <img src="{%static 'ovulation.jpg'%}" alt="" class="homeimg">
+      </div>
+    </div>
+
+    <!-- 6 -->
+    <div class="homepage2">
+      <div class="image">
+        <img src="{%static 'p-removebg-preview.png'%}" alt="" class="homeimg">
+      </div>
+      <div class="content">
+        <h2 class="heading">Products</h2>
+        <p class="matter">If you want to know more about your body and how your cycle can affect everything from
+          your mood to your energy levels, tracking your periods and ovulation is a great place to start.</p>
+        <div class="anchor">
+          <a href="#" title="Buy the products"> <i class="fa-solid fa-arrow-left"></i> Buy Productsd
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+
+  </section>
+  <!-- main features ends -->
+
+  <!-- counter section starts  -->
+  <section class="counter" id="counter">
+    <h2>We Have</h2>
+    <p class="underline"></p>
+    <div class="hero">
+      <div class="counter_row">
+        <div class="counter_col">
+          <div class="counter-box">
+            <i class="fa fa-solid fa-hospital"></i>
+            <h2 class="counterh2" data-number="215">0</h2>
+            <h4>Visitors</h4>
+          </div>
+        </div>
+        <div class="counter_col">
+          <div class="counter-box">
+            <i class="fa fa-solid fa-face-smile"></i>
+            <h2 class="counterh2" data-number="101">0</h2>
+            <h4>Suggested Doctors</h4>
+          </div>
+        </div>
+        <div class="counter_col">
+          <div class="counter-box">
+            <i class="fa fa-solid fa-bed-pulse"></i>
+            <h2 class="counterh2" data-number="150">0</h2>
+            <h4>Accurate Prediction</h4>
+          </div>
+        </div>
+        <div class="counter_col">
+          <div class="counter-box">
+            <i class="fa fa-solid fa-truck-medical"></i>
+            <h2 class="counterh2" data-number="176">0</h2>
+            <h4>Articles</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- counter section ends -->
+
+  <!---FAQ section starts-->
+  <section class="faq">
+    <div class="faq_container">
+      <h2 class="heading">Frequently Asked Question</h2>
+      <p class="underline"></p>
+
+      <img src="{%static 'faq.png'%}" alt="Frequently Asked Question">
+
+      <details>
+        <summary>How can I keep track of data pertaining to my health and well-being (such as my periods and symptoms)?
+        </summary>
+        <div>
+          <em>You can add, edit, or delete your periods, symptoms, and events by clicking the '+' icon, with the
+            exception of events that are imported automatically from third-party trackers. Also you can delete
+            historical data at any time by reaching out to our customer support team at support@menstruguide.health. We
+            firmly
+            believe that our users deserve complete control over their data, and we are here to support you every step
+            of the way.</em>
+        </div>
+      </details>
+
+      <details>
+        <summary>Can I change my lifestyle settings and information about my past pregnancies?</summary>
+        <div>
+          <em>Yes, you can edit your lifestyle settings and your past pregnancies. You can delete your past pregnancies
+            as well.</em>
+        </div>
+      </details>
+
+      <details>
+        <summary>How can I change data I used while signing up (like email address or a password)?</summary>
+        <div>
+          <em>You can edit your email address if it's not verified and change your password.
+            <br>
+            You can change your password by signing out of your registered account and tapping the “Forgot your
+            password” button on the login screen. You can also edit your email address</em>
+        </div>
+      </details>
+
+      <details>
+        <summary>Can I withdraw my consent from processing my data?</summary>
+        <div>
+          <em>TWhere we process your personal data with your consent, you can withdraw your consent at any time if you
+            want us to stop.</em>
+        </div>
+      </details>
+
+    </div>
+  </section>
+  <!---FAQ section ends-->
+
+  <!-- footer section starts -->
+  <footer>
+    <div class="footer_container">
+      <div class="sec footer_aboutus">
+        <h2>Who are We</h2>
+        <!-- <img src="Frame 15.png" alt=""> -->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta voluptatem officiis ullam praesentium
+          minima tenetur nesciunt quidem ab facilis quo!</p>
+        <ul class="footer_sci">
+          <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
+        </ul>
+      </div>
+      <div class="sec footer_quicklinks">
+        <h2>Quick Links</h2>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Menstrual Awarness</a></li>
+          <li><a href="#">Track</a></li>
+          <li><a href="#">Login</a></li>
+          <li><a href="#">Discuss</a></li>
+        </ul>
+      </div>
+
+      <div class="sec footer_quicklinks">
+        <h2>Track</h2>
+        <ul>
+          <li><a href="#">PCOS Prediction</a></li>
+          <li><a href="#">Period Tracker</a></li>
+          <li><a href="#">Ovulation Tracker</a></li>
+          <li><a href="#">Pregnancy Tracker</a></li>
+        </ul>
+      </div>
+      <div class="footer_sec_contact">
+        <h2>Contact Us</h2>
+        <ul class="footer_contact_info">
+          <li>
+            <span><i class="fa-solid fa-location-dot"></i></span>
+            <span> P.O. Tilwara Ghat, Near Bargi Hills, <br>
+              Jabalpur, Madhya Pradesh 482003</span>
+          </li>
+
+          <li>
+            <span><i class="fa-solid fa-phone"></i></span>
+            <p><a href="tel:+12345678900">098935 56449</a>
+            </p>
+          </li>
+
+          <li>
+            <span><i class="fa-solid fa-envelope"></i></span>
+            <p><a href="mailto:jeevanmaitree@gmail.com">menstruguide@gmail.com</a></p>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </footer>
+  <div class="footer_copyrightText">
+    <p>Copyright © 2023-MENSTRUGUIDE . All Rights Reserved.</p>
+  </div>
+  <!-- footer section ends -->
+
+
+
+  <script src="{%static 'home.js'%}"></script>
+</body>
+
+</html>

@@ -1,0 +1,400 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* nav */
+
+body{
+    margin-top:3rem;
+	line-height: 1.5;
+	font-family: 'Merriweather', sans-serif;
+	font-weight: 400;
+	/* background:  whitesmoke; */
+	/* background: #f7b3b7; */
+	
+	
+
+}
+body.hidden-scrolling{
+	overflow-y: hidden;
+}
+
+.container{
+	max-width: 1650px;
+	margin:auto;
+}
+.nav-menu ul{
+	list-style: none;
+	margin:0;
+	padding:0;
+}
+a{
+	text-decoration: none;
+}
+#menu-item-discuss{
+	background-color: #A20000;
+	color:white;
+	padding-left:0.8rem;
+	padding-right:0.8rem;
+	
+}
+/* /header/ */
+.header{
+	position: fixed;
+	width:100%;
+	left:0;
+	top:0;
+	z-index: 100;
+	
+}
+.header-main{
+	
+	background-color: #F2D4D6;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 0;
+	box-shadow: 0 8px 6px -6px #f7b3b7;
+	
+}
+.header .logo{
+	padding-left: 1.5%;
+	
+}
+.header .logo a{
+	font-size: 30px;
+	text-transform: capitalize;
+	color: #A20000;
+	font-weight: 600;
+}
+.header .nav-menu{
+	padding: 0 15px;
+}
+.header .menu > .menu-item{
+	display: inline-block;
+	margin-left: 30px;
+	position: relative;
+}
+.header .menu > .menu-item > a{
+	display: block;
+	padding: 12px 0;
+	font-size: 16px;
+	color: #A20000;
+	text-transform: capitalize;
+	font-weight: 600;
+	transition: all 0.3s ease;
+}
+.header .menu > .menu-item > a .plus{
+	display: inline-block;
+	height: 12px;
+	width: 12px;
+	position: relative;
+	margin-left:5px; 
+	pointer-events: none;
+}
+.header .menu > .menu-item > a .plus:before,
+.header .menu > .menu-item > a .plus:after{
+	content:'';
+	position: absolute;
+	box-sizing: border-box;
+	left: 50%;
+	top:50%;
+	background-color: #000000;
+	height: 2px;
+	width: 100%;
+	transform: translate(-50%,-50%);
+	transition: all 0.3s ease;
+}
+.header .menu > .menu-item:hover > a .plus:before,
+.header .menu > .menu-item:hover > a .plus:after{
+   background-color: #A20000;
+
+}
+.header .menu > .menu-item > a .plus:after{
+   transform: translate(-50%,-50%) rotate(-90deg);	
+}
+.header .menu > .menu-item > .sub-menu > .menu-item > a:hover,
+.header .menu > .menu-item:hover > a{
+	color: white;
+    background-color: #A20000;
+	padding-left:1rem;
+	padding-right:1rem;
+	border-radius: 0.4rem;
+}
+.header .menu > .menu-item > .sub-menu{
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+	width: 220px;
+	position: absolute;
+	left:0;
+	top:100%;
+	background-color: #ffffff;
+	padding: 10px 0;
+	border-top: 3px solid #A20000;
+	transform: translateY(10px);
+	transition: all 0.3s ease;
+	opacity:0;
+	visibility: hidden;
+}
+
+.header .login{
+	display: inline-block;
+	margin-left: 30px;
+	position: relative;
+}
+
+.header .login a{
+	display: block;
+	padding: 12px 0;
+	font-size: 16px;
+	color: #A20000;
+	text-transform: capitalize;
+	font-weight: 600;
+	padding-left:.5rem;
+	padding-right:  0.5em;
+	transition: all 0.3s ease;
+}
+
+.header .login::after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 0.175rem;
+	background: #A20000;
+	left: 0;
+	bottom: 0;
+	/* transform: scale(0, 1); */
+	/* border-radius: 100px; */
+}
+
+.header .login .login_a::after{
+	transform: scale(0, 1);
+	transform-origin: 0% 100%;
+	transition: transform 0.3s ease;
+}
+
+.header .login .login_a:hover::after{
+	transform: scale(1, 1);
+}
+@media(min-width: 992px){
+.header .menu > .menu-item-has-children:hover > .sub-menu{
+	transform: translateY(0);
+	opacity: 1;
+	visibility: visible;
+ }
+ .header .menu > .menu-item-has-children:hover > a .plus:after{
+    transform: translate(-50%,-50%) rotate(0deg);		
+ }
+}
+.header .menu > .menu-item > .sub-menu > .menu-item{
+	display: block;
+}
+.header .menu > .menu-item > .sub-menu > .menu-item > a{
+	display: block;
+	padding: 10px 20px;
+	font-size: 16px;
+	font-weight: 600;
+	color: #A20000;
+	transition: all 0.3s ease;
+	text-transform: capitalize;
+}
+.header .open-nav-menu{
+	height: 34px;
+	width: 40px;
+	margin-right: 15px;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+.header .open-nav-menu span{
+	display: block;
+	height: 3px;
+	width: 24px;
+	background-color: #000000;
+    position: relative;
+}
+.header .open-nav-menu span:before,
+.header .open-nav-menu span:after{
+	content: '';
+	position: absolute;
+	left:0;
+	width: 100%;
+	height: 100%;
+	background-color: #000000;
+	box-sizing: border-box;
+}
+.header .open-nav-menu span:before{
+	top:-7px;
+}
+.header .open-nav-menu span:after{
+	top:7px;
+}
+.header .close-nav-menu{
+	height: 40px;
+	width: 40px;
+	background-color: #A20000;
+	margin:0 0 15px 15px;
+	cursor: pointer;
+	display: none;
+	align-items: center;
+	justify-content: center;
+}
+.header .close-nav-menu img{
+	width: 16px;
+}
+.header .menu-overlay{
+	position: fixed;
+	z-index: 999;
+	background-color: rgba(0,0,0,0.5);
+	left:0;
+	top:0;
+	height: 100%;
+	width: 100%;
+	visibility: hidden;
+	opacity:0;
+	transition: all 0.3s ease;
+}
+.mawarenessbody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    background: #F2D4D6;
+}
+
+.mawarenessbody .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 40px 0;
+}
+
+.mawarenessbody .container .card {
+    position: relative;
+    min-width: 320px;
+    height: 480px;
+    box-shadow: inset 5px 5px 5px #F2D4D6,
+        inset -5px -5px 15px #efa8a2,
+        5px 5px 15px #F2D4D6, -5px -5px 15px #efa8a2;
+    border-radius: 15px;
+    margin: 30px;
+    transition: 0.5s;
+}
+
+.mawarenessbody .container .card:nth-child(1) .box .content a {
+    background: #A20000;
+}
+
+.mawarenessbody .container .card:nth-child(2) .box .content a {
+    background: #A20000;
+}
+
+.mawarenessbody .container .card:nth-child(3) .box .content a {
+    background: #A20000;
+}
+
+.mawarenessbody .container .card .box {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background: #efa8a2;
+    border-radius: 15px;
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
+    /* overflow: hidden; */
+    transition: 0.5s;
+}
+
+.mawarenessbody .container .card .box:hover {
+    transform: translateY(-50px);
+}
+
+.mawarenessbody .container .card .box:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    /* background::#A20000; */
+}
+
+.mawarenessbody .container .card .box .imgBx img{
+    position: relative;
+    width:100%;
+    height: 40%;
+    /* background-image: url('img/blog/2.png'); */
+    background-size: cover;
+    border-radius: 15px 15px 15px 15px;
+    padding: 5px;
+  
+}
+
+.mawarenessbody .container .card .box .content {
+    padding: 20px;
+    text-align: center;
+    color: #A20000;
+}
+
+/* body .container .card .box .content h2 {
+    position: absolute;
+    top: -10px;
+    right: 30px;
+    font-size: 8rem;
+    color:rgb(196, 106, 106);
+  } */
+
+.mawarenessbody .container .card .box .content h3 {
+    font-size: 1.8rem;
+    color: #A20000;
+    z-index: 1;
+    transition: 0.5s;
+    margin-bottom: 15px;
+}
+
+.mawarenessbody .container .card .box .content p {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #A20000;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.mawarenessbody .container .card .box .content .con {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #A20000;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.mawarenessbody .container .card .box .content a {
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    background: #A20000;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    margin-top: 20px;
+    box-shadow: 0 10px 20px#A20000;
+    transition: 0.5s;
+}
+
+.mawarenessbody .container .card .box .content a:hover {
+    box-shadow: 0 10px 20px white;
+    background: #A20000;
+    color: white;
+}

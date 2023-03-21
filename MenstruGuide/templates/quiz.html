@@ -1,0 +1,193 @@
+
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Quiz</title>
+	<link rel="stylesheet" href="{%static 'quiz.css'%}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+	<header class="header">
+        <div class="container">
+            <div class="header-main">
+                <div class="logo">
+                    <a href="/"><img src="{%static 'logo.png'%}" width="75vh"></a>
+                </div>
+                <div class="open-nav-menu">
+                    <span></span>
+                </div>
+                <div class="menu-overlay">
+                </div>
+                <!-- navigation menu start -->
+                <div class="nav-menu">
+                    <div class="close-nav-menu">
+                        <img src="{%static 'close.svg'%}" alt="close">
+                    </div>
+                    <ul class="menu">
+                        <li class="menu-item menu-item-has-children">
+                            <a href="MenstrualAwareness" data-toggle="sub-menu">Menstrual Awarness</a>
+                            <ul class="sub-menu">
+                                <li class="menu-item"><a href="homeRemedies">Home Remedies</a></li>
+                                <li class="menu-item"><a href="">Anganbadi And Ngo</a></li>
+                                <li class="menu-item"><a href="skinChange">Skin And Hair</a></li>
+                                <li class="menu-item"><a href="#">Diet and Exercise</a></li>
+                                <li class="menu-item"><a href="#">Bleeding</a></li>
+                                <li class="menu-item"><a href="#">Emotions</a></li>
+                                <li class="menu-item"><a href="doDont">Do's and Dont's</a></li>
+                                <li class="menu-item"><a href="quiz">Quizes</a></li>
+                                <li class="menu-item"><a href="menopause">Menopause</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item menu-item-has-children">
+                            <a href="#" data-toggle="sub-menu">Product </a>
+                            <ul class="sub-menu">
+                                <li class="menu-item"><a href="#">Menstruation</a></li>
+                                <li class="menu-item"><a href="#">Pregnancy Kits</a></li>
+    
+                            </ul>
+                        </li>
+                        <li class="menu-item menu-item-has-children">
+                            <a href="#" data-toggle="sub-menu">Track </a>
+                            <ul class="sub-menu">
+                                <li class="menu-item"><a href="pcosHome">PCOS Prediction</a></li>
+                                <li class="menu-item"><a href="ovulation">Ovulation Tracker</a></li>
+                                <li class="menu-item"><a href="nextPeriod">Period Calculator</a></li>
+                                <li class="menu-item"><a href="pregnancyTracker">Pregnancy test calculator</a></li>
+    
+                            </ul>
+                        </li>
+                        <li class="menu-item menu-item-has-children">
+                            <a href="#" data-toggle="sub-menu">Health Condition </a>
+                            <ul class="sub-menu">
+                                <li class="menu-item"><a href="#">Cancer</a></li>
+                                <li class="menu-item"><a href="#">PCO's</a></li>
+                                <li class="menu-item"><a href="#">Others</a></li>
+                                <li class="menu-item"><a href="#">Consult / Find a Doctor</a></li>
+    
+                            </ul>
+                        </li>
+    
+                        <li class="login">
+                            <a href="login" class="login_a">Login</a>
+                            <!-- <button class="login_a">Login</button> -->
+                        </li>
+    
+                        <li class="menu-item">
+                            <a id="menu-item-discuss" href="discussionForum" style="border-radius: 0.4rem;">Discuss</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- navigation menu end -->
+            </div>
+        </div>
+    </header>
+	<section id="quizstart" class="quizstart">
+		<div class="quiz-container" id="quiz">
+			<div class="quiz-header">
+				<h2 id="question">Question Test</h2>
+				<ul class="quiz-ul">
+					<!-- 1 -->
+					<li class="quiz-li">
+						<input type="radio" name="answer" id="a" class="answer">
+						<label for="a" id="a_text">Answer</label>
+					</li>
+
+					<!-- 2 -->
+					<li class="quiz-li">
+						<input type="radio" name="answer" id="b" class="answer">
+						<label for="b" id="b_text">Answer</label>
+					</li>
+
+					<!-- 3 -->
+					<li class="quiz-li">
+						<input type="radio" name="answer" id="c" class="answer">
+						<label for="c" id="c_text">Answer</label>
+					</li>
+
+					<!-- 4 -->
+					<li class="quiz-li">
+						<input type="radio" name="answer" id="d" class="answer">
+						<label for="d" id="d_text">Answer</label>
+					</li>
+				</ul>
+			</div>
+			<button id="submit">Submit</button>
+		</div>
+	</section>
+
+	<!-- footer section starts -->
+	<footer>
+		<div class="footer_container">
+		  <div class="sec footer_aboutus">
+			<h2>Who are We</h2>
+			<!-- <img src="Frame 15.png" alt=""> -->
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta voluptatem officiis ullam praesentium
+			  minima tenetur nesciunt quidem ab facilis quo!</p>
+			<ul class="footer_sci">
+			  <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+			  <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+			  <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+			  <li><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
+			</ul>
+		  </div>
+		  <div class="sec footer_quicklinks">
+			<h2>Quick Links</h2>
+			<ul>
+			  <li><a href="#">Home</a></li>
+			  <li><a href="#">Menstrual Awarness</a></li>
+			  <li><a href="#">Track</a></li>
+			  <li><a href="#">Login</a></li>
+			  <li><a href="#">Discuss</a></li>
+			</ul>
+		  </div>
+	
+		  <div class="sec footer_quicklinks">
+			<h2>Track</h2>
+			<ul>
+			  <li><a href="#">PCOS Prediction</a></li>
+			  <li><a href="#">Period Tracker</a></li>
+			  <li><a href="#">Ovulation Tracker</a></li>
+			  <li><a href="#">Pregnancy Tracker</a></li>
+			</ul>
+		  </div>
+		  <div class="footer_sec_contact">
+			<h2>Contact Us</h2>
+			<ul class="footer_contact_info">
+			  <li>
+				<span><i class="fa-solid fa-location-dot"></i></span>
+				<span> P.O. Tilwara Ghat, Near Bargi Hills, <br>
+				  Jabalpur, Madhya Pradesh 482003</span>
+			  </li>
+	
+			  <li>
+				<span><i class="fa-solid fa-phone"></i></span>
+				<p><a href="tel:+12345678900">098935 56449</a>
+				</p>
+			  </li>
+	
+			  <li>
+				<span><i class="fa-solid fa-envelope"></i></span>
+				<p><a href="mailto:jeevanmaitree@gmail.com">menstruguide@gmail.com</a></p>
+			  </li>
+			</ul>
+		  </div>
+	
+		</div>
+	  </footer>
+	  <div class="footer_copyrightText">
+		<p>Copyright © 2023-MENSTRUGUIDE . All Rights Reserved.</p>
+	  </div>
+	  <!-- footer section ends -->
+
+
+
+	<script src="{%static 'quiz.js'%}"></script>
+</body>
+
+</html>
